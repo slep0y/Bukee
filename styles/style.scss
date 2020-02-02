@@ -1,0 +1,156 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.page-main {
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 36px;
+  padding-bottom: 80px;
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: block;
+    height: 28px;
+    width: 137px;
+    background-image: url(../images/logo.svg);
+  }
+}
+
+.header-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Open Sans', sans-serif;
+
+  &__item {
+    margin-left: 22px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+      border-bottom: 3px solid #5abe93;
+    }
+  }
+
+  &__item.active {
+    border-bottom: 3px solid #5abe93;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0.5px;
+  }
+}
+
+.block-book {
+  padding-top: 80px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.block-text {
+  flex-basis: calc(94% - 500px);
+
+  &__name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 38px;
+    letter-spacing: 1.6px;
+
+    span {
+      color: #5abe93;
+      display: block;
+      font-size: 18px;
+      margin-top: 5px;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    display: block;
+    background-color: #5abe93;
+    color: #fff;
+    text-decoration: none;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 47px;
+    padding: 15px 0;
+    line-height: 0.8;
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    margin-bottom: 20px;
+  }
+  small {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+  }
+}
+
+.block-book-demo {
+  background-image: url('../images/book.svg');
+  width: 447px;
+  height: 643px;
+  background-repeat: no-repeat;
+  flex-basis: 500px;
+  &__title {
+    margin-top: 107px;
+    font-size: 38px;
+
+    span {
+      color: #5abe93;
+      display: block;
+      font-size: 18px;
+      margin-top: 5px;
+      letter-spacing: 0.8px;
+    }
+  } 
+}
