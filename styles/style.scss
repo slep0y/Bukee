@@ -79,6 +79,7 @@ body {
   padding-top: 80px;
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 159px;
 }
 
 .block-text {
@@ -129,6 +130,7 @@ body {
     letter-spacing: -0.2px;
     margin-bottom: 20px;
   }
+
   small {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
@@ -141,16 +143,81 @@ body {
   height: 643px;
   background-repeat: no-repeat;
   flex-basis: 500px;
+  position: relative;
+  &__name {
+    position: absolute;
+    bottom: 58px;
+    left: 86px;
+    font-size: 14px;
+    color: #5abe93;
+    letter-spacing: 0.4px;
+  }
   &__title {
     margin-top: 107px;
     font-size: 38px;
+    padding-left: 130px;
 
     span {
       color: #5abe93;
       display: block;
-      font-size: 18px;
-      margin-top: 5px;
+      font-size: 14px;
       letter-spacing: 0.8px;
+      font-weight: 400;
     }
-  } 
+  }
+}
+
+.block-photo {
+  position: relative;
+  &__svg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+  }
+  &__photo {
+    margin-top: 48px;
+    margin-right: 44px;
+  }
+}
+
+.block-about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+  margin-bottom: 0;
+  &__name {
+    margin-top: 15px;
+  }
+  &__text {
+    margin-top: 13px;
+  }
+  &__title {
+    margin-top: 13px;
+  }
+  &__btn {
+    max-width: 236px;
+  }
+}
+
+.block-widget {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 171px;
+  margin-bottom: 160px;
+  &__fact {
+    width: 33.33%;
+    flex-basis: 33.33%;
+    text-align: center;
+  }
+  &__num {
+    font-size: 80px;
+    color: #5abe93;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+  }
+  &__title {
+    margin-top: 5px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+  }
 }
